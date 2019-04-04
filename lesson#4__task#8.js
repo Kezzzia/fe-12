@@ -4,9 +4,9 @@ function transferTempFahrenheit() {
     var c = (prompt(""));
     var f = c * 1.8 + 32;
     if (Number.isNaN(f)) {
-        alert(0);
+        return 0;
     } else {
-        alert(f);
+        return f;
     }
 }
 
@@ -16,9 +16,9 @@ function transferTempCelsius() {
     var f = (prompt(""));
     var c = (f - 32) / 1.8;
     if (Number.isNaN(c)) {
-        alert(0);
+        return 0;
     } else {
-        alert(c);
+        return c;
     }
 }
 
